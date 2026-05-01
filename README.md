@@ -182,6 +182,7 @@ Exécutée automatiquement via `--startup-command` au démarrage de la session.
 | Root via native check | Détecté | Neutralisé (`checkForRoot` → 0) |
 | SE linux Flag Is Enabled | Détecté | Neutralisé |
 | Magisk specific checks | Détecté | Neutralisé |
+<img width="2291" height="933" alt="image" src="https://github.com/user-attachments/assets/e8783140-088d-4901-8805-54d8e295c981" />
 
 ### Ce que fait `android root disable`
 
@@ -193,7 +194,7 @@ Objection installe des hooks Java via Frida qui :
 - Désactivent des méthodes de libs connues (RootBeer `isRooted()`, etc.)
 
 ---
-[vid.zip](https://github.com/user-attachments/files/27274608/vid.zip)
+
 
 
 ## 6. Exercice 4 — Bonus natif avec frida-trace (20 pts)
@@ -240,6 +241,7 @@ Une fois le comportement confirmé, on force le retour à `false` :
 ```
 android hooking set return_value com.scottyab.rootbeer.RootBeer.checkForRWPaths false
 ```
+<img width="800" height="373" alt="vid_gif" src="https://github.com/user-attachments/assets/a758fe7d-86d4-49af-b613-06f6ace1531a" />
 
 ### Script Frida alternatif
 
@@ -284,6 +286,8 @@ android hooking search methods isRooted
 
 # Forcer le retour d'une méthode spécifique
 android hooking set return_value com.scottyab.rootbeer.RootBeer.checkForRWPaths false
+<img width="2291" height="933" alt="image" src="https://github.com/user-attachments/assets/4d4d4758-f544-4ce9-85d6-05ee60695e51" />
+
 
 # Tracer les appels natifs
 frida-trace -U -i open -i access -i stat -i openat com.scottyab.rootbeer.sample
