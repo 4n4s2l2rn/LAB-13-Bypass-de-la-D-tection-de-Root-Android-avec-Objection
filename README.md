@@ -241,7 +241,9 @@ Une fois le comportement confirmé, on force le retour à `false` :
 ```
 android hooking set return_value com.scottyab.rootbeer.RootBeer.checkForRWPaths false
 ```
-<img width="800" height="373" alt="vid_gif" src="https://github.com/user-attachments/assets/a758fe7d-86d4-49af-b613-06f6ace1531a" />
+
+<img width="400" height="187" alt="vid-" src="https://github.com/user-attachments/assets/b6f9f199-1667-4ff5-a9c3-c76b25c6d119" />
+
 
 ### Script Frida alternatif
 
