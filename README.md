@@ -193,6 +193,8 @@ Objection installe des hooks Java via Frida qui :
 - Désactivent des méthodes de libs connues (RootBeer `isRooted()`, etc.)
 
 ---
+[vid.zip](https://github.com/user-attachments/files/27274608/vid.zip)
+
 
 ## 6. Exercice 4 — Bonus natif avec frida-trace (20 pts)
 
